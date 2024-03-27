@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+
+       img{
+        position: relative;
+        top: 60px;
+        left: -40px;
+       }
+        #ID{
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        #Pass{
+            margin-top: 5px;;
+           
+        }
+
+        #bt{
+            margin-top: 30px;
+            margin-left:40px ;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            ;
+        }
+
+        .Container{
+           
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 900px;
+            height: 500px;
+            background-color: #aca8a8;
+            
+        }
+        .box{
+            position: relative;
+
+            width: 38%;
+            float: left;
+            height: 530px;
+            top: -3%;
+            background-color:rgba(243,66,66, 1.0);
+            box-sizing: border-box;
+            box-shadow: -20px 0 15px rgba(0,0,0, .5);
+        }
+
+        .internal{
+            position: relative;
+            left:  540px;
+            top: 150px;
+
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+  
+     <div class="Container">
+    
+
+        <div class="box">
+          
+            <form class="internal">
+                <label id = "ID"> Login ID: </label>
+                <br>
+                <input id="ID" type="text", placeholder="ID ">
+
+                <br>
+
+                <label id = "Pass"> Password: </label>
+                <br>
+                <input id="Pass" type="text", placeholder="Password ">
+
+                <br>
+
+                <button id = "bt">Login</button>
+            </form>
+
+            <img align="right" class="img" src="signin.png" width="250px" height="180px" >
+        </div>
+     </div>
+   
+</body>
+</html>
