@@ -6,6 +6,17 @@
     <title>Login</title>
 
     <style>
+        h2{
+            position: absolute;
+            justify-content: center;
+            padding-right: 30px;
+            background-color: white;
+            padding-left: 10px;
+
+        }
+        body{
+            background-color: rgba(28, 28, 57 );
+        }
 
        img{
         position: relative;
@@ -24,12 +35,15 @@
 
         #bt{
             margin-top: 30px;
-            margin-left:40px ;
+            margin-left:90px ;
             padding-left: 30px;
             padding-right: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
 
             ;
         }
+
 
         .Container{
            
@@ -56,10 +70,17 @@
 
         .internal{
             position: relative;
-            left:  540px;
-            top: 150px;
+            left:  480px;
+            top: 160px;
+        }
 
-
+        input{
+            height: 25px;
+            width: 300px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 1px solid black;
         }
 
 
@@ -72,22 +93,25 @@
     
 
         <div class="box">
+            <h2>Login</h2>
           
-            <form class="internal">
+            <form class="internal"action="Backend.php", method="post">
                 <label id = "ID"> Login ID: </label>
                 <br>
-                <input id="ID" type="text", placeholder="ID ">
+                <input id="ID" type="text", placeholder="ID ", name="id">
+                <box-icon name='user-circle' ></box-icon>
 
                 <br>
 
                 <label id = "Pass"> Password: </label>
                 <br>
-                <input id="Pass" type="text", placeholder="Password ">
+                <input id="Pass" type="text", placeholder="Password ", name="pass">
 
                 <br>
 
                 <button id = "bt">Login</button>
             </form>
+           
 
             <img align="right" class="img" src="signin.png" width="250px" height="180px" >
         </div>
