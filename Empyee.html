@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul  class="menu">
+            <li><a href="#">WT Project</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Create</a></li>
+            <li><a href="#">Spaces</a></li>
+            <li><a href="#">Users</a></li>
+           
+        </ul>
+        
+    </nav>
+
+    <div class="time-zone">
+        <p>Current Time Zone: UTC +0</p>
+        <!-- You can dynamically update the time using JavaScript if needed -->
+        <p>Current Time: <span id="currentTime"></span></p>
+    </div>
+
+    <div class="todo-container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="activity-box">
+        <h2>Recent Activity</h2>
+        <ul id="activityList">
+            <li>User John Doe logged in.</li>
+            <li>User Jane Smith updated project XYZ.</li>
+            <!-- Add more activity items as needed -->
+        </ul>
+    </div>
+
+    <div class="meeting-section">
+        <h2>Meetings</h2>
+        <ul id="meetingList">
+            <li><a href="#">Weekly Team Meeting</a></li>
+            <li><a href="#">Project Review Meeting</a></li>
+            <!-- Add more meeting links as needed -->
+        </ul>
+    </div>
+
+    <!-- Goal and Performance Box -->
+<!-- Goal and Performance Box -->
+<div class="goal-performance-box">
+    <h2>Goal and Performance</h2>
+    <div class="goal">
+        <p>Goal 1</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <!-- Add more goals or performance indicators as needed -->
+</div>
+
+
+
+    <script src="script.js"></script>   
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    min-width: 100%;
+    min-height: 100vh;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:  url(wallpaper.jpg); 
+    background-position : center; 
+    background-size: cover;
+    background-repeat: none;
+
+}
+nav
+{
+    background-color: #f71606;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+nav ul{
+    width: 100%;
+    
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+nav li
+{
+    height: 50px;
+}
+
+nav a
+{
+    height: 100%;
+    text-decoration:none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    
+}
+
+nav a:hover
+{
+    background-color: white;    
+}
+
+nav li:first-child
+{
+    margin-right:auto;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Updated CSS */
+
+/* Navbar styles */
+#navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+#navbarList li {
+    float: left;
+}
+
+#navbarList li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbarList li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Todo list styles */
+/* Updated CSS */
+
+/* Todo list styles */
+.todo-container {
+    position: fixed;
+    top: 45%;
+    left: 20px; /* Adjust left position as needed */
+    transform: translateY(-50%);
+    max-width: 200px; /* Adjust the width of the todo list */
+    height: 200px; /* Adjust the height of the todo list */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.todo-container h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.todo-container input[type="text"] {
+    width: calc(100% - 16px);
+    outline: none;
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.todo-container button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-container button:hover {
+    background-color: #0056b3;
+}
+
+.todo-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-container li {
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.todo-container .completed {
+    text-decoration: line-through;
+}
+
+/* Updated CSS for Todo List Remove Button */
+
+.todo-container button.remove-button {
+    padding: 5px 10px; /* Adjust padding for smaller button size */
+    background-color: #dc3545; /* Red color for the button */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for hover */
+}
+
+.todo-container button.remove-button:hover {
+    background-color: #c82333; /* Darker shade of red on hover */
+}
+
+
+/* Updated CSS */
+
+/* Time Zone styles */
+/* Updated CSS */
+
+/* Time Zone styles */
+.time-zone {
+    position: fixed;
+    top: 90px; /* Adjust top position as needed to be below the navbar */
+    left: 20px; /* Adjust left position as needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 100; /* Ensure the time zone is above other elements */
+}
+
+.time-zone p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.time-zone #currentTime {
+    font-weight: bold;
+}
+
+/* Updated CSS */
+
+/* Activity Box styles */
+.activity-box {
+    position: fixed;
+    top: calc(50% + 90px); /* Position below the todo list */
+    left: 20px; /* Adjust left position as needed */
+    max-width: 200px; /* Adjust the width of the activity box */
+    height: 200px; /* Adjust the height of the activity box */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.activity-box h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.activity-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-box li {
+    margin-bottom: 5px;
+}
+
+/* Updated CSS */
+
+/* Meeting Section styles */
+/* Updated CSS */
+
+/* Meeting Section styles */
+.meeting-section {
+    position: fixed;
+    top: calc(50% - 280px); /* Position in the middle */
+    right: 20px; /* Adjust right position as needed */
+    width: 250px; /* Increase the width of the meeting section */
+    max-height: 200px; /* Adjust the maximum height of the meeting section */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.meeting-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.meeting-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meeting-section li {
+    margin-bottom: 5px;
+}
+
+.meeting-section li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.meeting-section li a:hover {
+    text-decoration: underline;
+}
+
+/* Goal and Performance Box styles */
+/* Goal and Performance Box styles */
+.goal-performance-box {
+    position: fixed;
+    top: calc(50% + 200px); /* Position below the meeting box */
+    right: 20px; /* Adjust right position as needed */
+    width: 250px; /* Adjust the width of the goal and performance box */
+    max-height: 200px; /* Adjust the maximum height of the goal and performance box */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 15px; /* Adjusted height */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 60%; /* Change the width to represent progress */
+    background-color: #007bff; /* Progress bar color */
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+
