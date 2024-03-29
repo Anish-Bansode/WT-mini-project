@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<style>
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    nav {
+    height: 80px;
+    background: #fdcc04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2);
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">WT Mini-Project</div>
+        <div class="nav-item">
+            <a href="/">HOME</a>
+            <a href="/General Pages/About.html">ABOUT</a>
+            <a href="/General Pages/Contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    
+<br><br><br><br><br>
+<h2 style="text-align: center;">Sign Up Form</h2>
+
+<form id="signup-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Sign Up">
+</form>
+
+<script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        
+        
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+       
+        var user = {
+            username: username,
+            email: email,
+            password: password
+        };
+
+    
+        localStorage.setItem("user", JSON.stringify(user));
+
+    
+        document.getElementById("signup-form").reset();
+
+    
+        alert("Sign up successful! User details saved locally.");
+
+    
+    });
+</script>
+
+</body>
+</html>

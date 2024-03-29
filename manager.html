@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="m.styles.css">
+</head>
+<body>
+    <nav>
+            <ul  class="menu">
+                <li><i><a href="#">Manager</a></i></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/General Pages/About.html">About</a></li>
+                <li><a href="/General Pages/Contact.html">Contact</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        
+    </nav>
+
+    <div class="time-zone">
+        <p>Current Time:</p>
+        <h1><span id="currentTime"></span></h1>
+
+        <script>
+            function updateTime() {
+              var now = new Date();
+              var hours = now.getHours();
+              var minutes = now.getMinutes();
+              var seconds = now.getSeconds();
+              var ampm = hours >= 12 ? 'PM' : 'AM'; 
+              hours = hours % 12;
+              hours = hours ? hours : 12;
+              
+              hours = (hours < 10) ? "0" + hours : hours;
+              minutes = (minutes < 10) ? "0" + minutes : minutes;
+              seconds = (seconds < 10) ? "0" + seconds : seconds;
+              
+              var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+              
+              document.getElementById("currentTime").textContent = timeString;
+            }
+            
+            // Updater:
+            setInterval(updateTime, 1000);
+            
+            // initialization:
+            updateTime();
+            </script>
+    </div>
+
+    <div class="todo-container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="activity-box">
+        <h2>Members List</h2><br>
+        <ul id="activityList">
+            <li>- Shubham Deshmukh</li>
+            <li>- Rajesh Choudhary</li>
+            <li>- Shurabh Singh</li>
+            <li>- Samruddhi Patil</li>
+        </ul>
+    </div>
+
+    <div class="notes-box">
+        <h2>Company Objective:</h2>
+        <hr><br>
+        <p>To revolutionize the transportation industry by developing sustainable, 
+            innovative solutions that prioritize environmental conservation and efficiency.
+            Our aim is to reduce carbon emissions, alleviate traffic congestion, 
+            and enhance mobility for individuals and businesses alike. <br><br>Through 
+            cutting-edge technology and strategic partnerships, we strive to create
+            a future where transportation is not only convenient but also environmentally
+            responsible.</p><br><hr><br><br><br>
+
+        <h2>Company Goals</h2>
+        <hr><br>
+        <p> <b>Market Leadership:</b> Become the leading provider in our industry by capturing a significant market share within the next three years.
+            <br> <br>
+            <b>Customer Satisfaction:</b> Achieve a customer satisfaction rating of over 90% by consistently delivering high-quality products and exceptional service.
+            <br> <br>
+            <b>Innovation:</b> Foster a culture of innovation within the company by encouraging employees to propose and implement new ideas that improve our products, services, and processes.
+            <br> <br>   
+            <b>Sustainability:</b> Reduce our carbon footprint by 20% within the next five years through the adoption of eco-friendly practices and the development of sustainable products.
+        </p>
+    </div>
+
+    <div class="meeting-section">
+        <h2>Tools</h2>
+        <ul id="meetingList">
+            <li><a href="#">Weekly Team Meeting</a></li>
+            <li><a href="#">Project Review Meeting</a></li>
+            <li><a href="#">Project Report</a></li>
+            <li><a href="#">Field work status</a></li>
+            <li><a href="#">New project details</a></li>
+            <li><a href="#">work updates</a></li>
+            <li><a href="#">Next week Projects</a></li>
+            <li><a href="#">Planning meet</a></li>
+            <li><a href="#">View Profile</a></li>
+            <li><a href="#">Update Profile</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="/">Logout</a></li>
+        </ul>
+    </div>
+
+<div class="goal-performance-box">
+    <h2>Task Completion</h2>
+    <br>
+    <div class="goal">
+        <p>Goal 1</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>   
+<script src="script.js"></script>
+</body>
+</html>

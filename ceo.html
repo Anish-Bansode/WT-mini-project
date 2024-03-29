@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="c.styles.css">
+</head>
+<body>
+    <nav>
+            <ul  class="menu">
+                <li><i><a href="#">CEO</a></i></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/General Pages/About.html">About</a></li>
+                <li><a href="/General Pages/Contact.html">Contact</a></li>
+            </ul>
+        
+    </nav>
+
+    <div class="time-zone">
+        <p>Current Time:</p>
+        <h1><span id="currentTime"></span></h1>
+
+        <script>
+            function updateTime() {
+              var now = new Date();
+              var hours = now.getHours();
+              var minutes = now.getMinutes();
+              var seconds = now.getSeconds();
+              var ampm = hours >= 12 ? 'PM' : 'AM'; 
+              hours = hours % 12;
+              hours = hours ? hours : 12;
+              
+              hours = (hours < 10) ? "0" + hours : hours;
+              minutes = (minutes < 10) ? "0" + minutes : minutes;
+              seconds = (seconds < 10) ? "0" + seconds : seconds;
+              
+              var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+              
+              document.getElementById("currentTime").textContent = timeString;
+            }
+            
+            // Updater:
+            setInterval(updateTime, 1000);
+            
+            // initialization:
+            updateTime();
+            </script>
+    </div>
+
+    <div class="todo-container">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="activity-box">
+        <h2>Recent Activity</h2>
+        <ul id="activityList">
+            <li>User John Doe logged in.</li>
+            <li>User Jane Smith updated project XYZ.</li>
+            <!-- Add more activity items as needed -->
+        </ul>
+    </div>
+
+    <div class="meeting-section">
+        <h2>Meetings</h2>
+        <ul id="meetingList">
+            <li><a href="#">Weekly Team Meeting</a></li>
+            <li><a href="#">Project Review Meeting</a></li>
+            <!-- Add more meeting links as needed -->
+        </ul>
+    </div>
+
+    <!-- Goal and Performance Box -->
+<!-- Goal and Performance Box -->
+<div class="goal-performance-box">
+    <h2>Goal and Performance</h2>
+    <div class="goal">
+        <p>Goal 1</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <!-- Add more goals or performance indicators as needed -->
+</div>
+
+
+
+    <script src="script.js"></script>   
+<script src="script.js"></script>
+</body>
+</html>

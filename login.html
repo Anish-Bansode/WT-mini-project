@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+
+    <style>
+        h2{
+            position: absolute;
+            justify-content: center;
+            padding-right: 30px;
+            background-color: white;
+            padding-left: 10px;
+
+        }
+        body{
+            background-color: rgba(28, 28, 57 );
+        }
+
+       img{
+        position: relative;
+        top: 60px;
+        left: -40px;
+       }
+        #ID{
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        #Pass{
+            margin-top: 5px;;
+           
+        }
+
+        #bt{
+            margin-top: 30px;
+            margin-left:90px ;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #007bff; 
+            color: white; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #bt:hover {
+            background-color: #0056b3; 
+        }
+
+
+        .Container{
+           
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 900px;
+            height: 500px;
+            background-color: #aca8a8;
+            
+        }
+        .box{
+            position: relative;
+
+            width: 38%;
+            float: left;
+            height: 530px;
+            top: -3%;
+            background-color:rgba(243,66,66, 1.0);
+            box-sizing: border-box;
+            box-shadow: -20px 0 15px rgba(0,0,0, .5);
+        }
+
+        .internal{
+            position: relative;
+            left:  480px;
+            top: 160px;
+        }
+
+        input{
+            height: 25px;
+            width: 300px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 1px solid black;
+            padding-left: 5px; 
+        }
+
+        label {
+            color: white; 
+        }
+
+    </style>
+
+</head>
+<body>
+  
+     <div class="Container">
+        <div class="box">
+            <h2>Login</h2>
+            <form class="internal" id="loginForm">
+                <label id="ID"> Login ID: </label><br>
+                <input id="IDInput" type="text" placeholder="ID" name="id"><br>
+                <box-icon name='user-circle' ></box-icon>
+                <br>
+                <label id="Pass"> Password: </label><br>
+                <input id="PassInput" type="password" placeholder="Password" name="pass"><br>
+                <br>
+                <button type="submit" id="bt">Login</button>
+            </form>
+            <img align="right" class="img" src="./Src/Img/signin.png" width="250px" height="180px">
+        </div>
+     </div>
+     <script src="script.js"></script>   
+     <script src="script.js"></script>
+</body>
+</html>
