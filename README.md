@@ -20,9 +20,7 @@ Meet the minds behind the magic:
   
 - **[Pritesh]**: https://github.com/PriteshBiradar
 
-## IMP
-Also we can change any thing at any point so don't worry...
-chahiye to pura project change kr dege!😁
+
 
 
 
